@@ -1,0 +1,26 @@
+<div class="container">
+  <h1>New Game</h1>
+  <div class="game">
+<!-- <p>Find me in app/views/games/new.html.erb</p>
+-->
+<% @letters.each do |letter| %>
+
+
+<button type="button" class="btn btn-primary"><%=letter %></button>
+<% end %>
+<%= @letters.join %>
+</div>
+
+<div class="longest">
+<!--   <h1>Question Time....</h1> -->
+  <form action="/score" method="post">
+    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+    <input name="joined" type="hidden" value="<%= @letters.join('') %>">
+    <input type="text" name="input" placeholder="What is the longest word you can find?" class="fm">
+    <input type="submit" value="Play" class="btn btn-danger">
+  </form>
+
+</div>
+<%= link_to "Play again", new_path %>
+
+</div>

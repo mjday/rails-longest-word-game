@@ -1,0 +1,32 @@
+// Place all the styles related to the Games controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+h1 {
+  font-size: 60px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: absolute;
+}
+
+.btn-primary {
+  font-weight: bold;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+}
+
+.longest {
+  padding: 8px;
+  margin: 8px;
+}
+
+.fm {
+  width: 300px;
+
+}
